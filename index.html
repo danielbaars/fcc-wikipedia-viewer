@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A Wikipedia Viewer built as part of Free Code Camp's 'Intermediate Front End Development Projects', using Pug, SCSS and Bootstrap 4.">
+    <meta name="author" content="Free Code Camp">
+    <meta name="robots" content="noindex, nofollow">
+    <title>FCC Build A Wikipedia Viewer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gentium+Basic|Work+Sans:300,400">
+    <link rel="stylesheet prefetch" href="style.css">
+  </head>
+  <body class="wikipedia-viewer">
+    <div class="wp-view__outer">
+      <div class="wp-view container">
+        <h1 class="wp-view__header">SearchPedia</h1><a class="wp-view__random" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Click here for a random article</a>
+        <div class="wp-view__search">
+          <div class="input-group">
+            <input class="wp-view__input form-control" type="text" placeholder="Search for..."><span class="input-group-btn">
+              <button class="wp-view__button btn btn-secondary" type="button">Go!</button></span>
+          </div>
+        </div>
+        <div class="wp-view__results"></div>
+        <div class="wp-view__more">
+          <div class="wp-view__more-button hide">More results...</div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

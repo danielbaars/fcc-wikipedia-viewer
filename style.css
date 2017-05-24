@@ -1,0 +1,107 @@
+.imgc img {
+  max-width: 100%;
+  width: 100%; }
+
+@media (min-width: 992px) {
+  .container {
+    width: 768px; } }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 768px; } }
+
+.hide {
+  display: none !important; }
+
+.show {
+  display: inline !important; }
+
+body {
+  background-color: #3D9970;
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px; }
+
+body, button, input, optgroup, select, textarea {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.6; }
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Gentium Basic', serif; }
+
+div p:last-child {
+  margin-bottom: 0; }
+
+.wp-view__header {
+  font-size: 74px;
+  line-height: 1.1;
+  margin-bottom: 20px; }
+
+.wp-view__card {
+  margin-bottom: 30px;
+  border: none; }
+  .wp-view__card:hover, .wp-view__card:focus {
+    text-decoration: none;
+    outline: none; }
+    .wp-view__card:hover .card-header, .wp-view__card:focus .card-header {
+      background-color: #122e22; }
+    .wp-view__card:hover .wp-view__intro, .wp-view__card:focus .wp-view__intro {
+      color: black; }
+  .wp-view__card .card-header {
+    padding: 8px 18px;
+    background-color: #1f4d38; }
+  .wp-view__card .card-block {
+    padding: 16px; }
+
+.wp-view__title {
+  font-size: 32px;
+  line-height: 1.1;
+  margin-bottom: 0;
+  color: white; }
+
+.wp-view__intro {
+  color: #464a4c;
+  margin-bottom: 0; }
+
+.wp-view__search {
+  margin-bottom: 40px; }
+  .wp-view__search .form-control,
+  .wp-view__search .btn {
+    font-size: 20px; }
+  .wp-view__search .form-control {
+    border: 2px solid #1f4d38; }
+
+.wp-view__button {
+  background-color: #1f4d38;
+  border: none;
+  color: white; }
+  .wp-view__button:hover {
+    background-color: #122e22;
+    color: inherit;
+    border: inherit;
+    cursor: pointer; }
+  .wp-view__button:focus {
+    box-shadow: none; }
+
+.wp-view__random,
+.wp-view__more-button {
+  display: inline-block;
+  padding: 12px 12px;
+  background-color: #3D9970;
+  border: 1px solid white;
+  color: white;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.1;
+  cursor: pointer;
+  margin-bottom: 40px; }
+  .wp-view__random:hover,
+  .wp-view__more-button:hover {
+    background-color: white;
+    color: #3D9970;
+    border-color: transparent;
+    text-decoration: none; }
+/*# sourceMappingURL=style.css.map */

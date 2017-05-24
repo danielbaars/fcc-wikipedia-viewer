@@ -1,0 +1,23 @@
+extends _default
+
+block head
+	- var pageTitle = 'FCC Build A Wikipedia Viewer'
+	- var metaDescription = "A Wikipedia Viewer built as part of Free Code Camp's 'Intermediate Front End Development Projects', using Pug, SCSS and Bootstrap 4."	
+	- var companyName = 'Free Code Camp'
+	- var bodyClass = 'wikipedia-viewer'
+	- var googleFonts = 'Gentium+Basic|Work+Sans:300,400'
+	- var jsFile = 'index.js'
+
+block content
+	.wp-view__outer
+		.wp-view.container
+			h1.wp-view__header SearchPedia
+			a.wp-view__random(href="https://en.wikipedia.org/wiki/Special:Random" target="_blank") Click here for a random article
+			.wp-view__search
+				.input-group
+					input.wp-view__input.form-control(type='text', placeholder='Search for...')
+					span.input-group-btn
+						button.wp-view__button.btn.btn-secondary(type='button') Go!
+			.wp-view__results
+			.wp-view__more
+				.wp-view__more-button.hide More results...

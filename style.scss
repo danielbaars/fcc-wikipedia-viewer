@@ -1,0 +1,245 @@
+@function tint($color, $percent) {
+  @return mix(#fff, $color, $percent);
+}
+
+@function shade($color, $percent) {
+  @return mix(#000, $color, $percent);
+}
+
+$sm: "(min-width: 576px)";
+$md: "(min-width: 768px)";
+$lg: "(min-width: 992px)";
+$xl: "(min-width: 1200px)";
+
+$gray: #BDBDBD;
+$red: #970000;
+$olive: #3D9970;
+$darkText: #464a4c;
+
+$bg: $olive;
+$buttonColor: shade($bg, 50%);
+$buttonColorDarker: shade($bg, 70%);
+
+.imgc {
+
+	img {
+
+		max-width: 100%;
+		width: 100%;
+
+	}
+
+}
+
+
+@media #{$lg} {
+
+	.container {
+
+		width: 768px;
+
+	}
+
+}
+
+
+@media #{$xl} {
+
+	.container {
+
+		width: 768px;
+
+	}
+
+}
+
+
+.hide {
+
+	display: none !important;
+
+}
+
+
+.show {
+
+	display: inline !important;
+
+}
+
+
+body {
+
+	background-color: $bg;
+	color: white;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 20px;
+
+}
+
+
+body, button, input, optgroup, select, textarea {
+
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 1.6;
+
+}
+
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+
+	font-family: 'Gentium Basic', serif;
+
+}
+
+
+div p:last-child {
+
+	margin-bottom: 0;
+
+}
+
+
+.wp-view__header {
+
+	font-size: 74px;
+	line-height: 1.1;
+	margin-bottom: 20px;
+
+}
+
+
+.wp-view__card {
+
+	margin-bottom: 30px;
+	border: none;
+
+	&:hover,
+	&:focus {
+
+		text-decoration: none;
+		outline: none;
+
+		.card-header {
+
+			background-color: $buttonColorDarker;
+
+		}
+
+		.wp-view__intro {
+
+			color: black;
+
+		}		
+
+	}
+
+	.card-header {
+
+		padding: 8px 18px;
+		background-color: $buttonColor;
+
+	}
+
+	.card-block {
+
+		padding: 16px;
+
+	}
+
+}
+
+
+.wp-view__title {
+
+	font-size: 32px;
+	line-height: 1.1;
+	margin-bottom: 0;
+	color: white;
+
+}
+
+
+.wp-view__intro {
+
+	color: $darkText;
+	margin-bottom: 0;
+
+}
+
+
+
+.wp-view__search {
+
+	margin-bottom: 40px;
+
+	.form-control,
+	.btn {
+
+		font-size: 20px;
+
+	}
+
+	.form-control {
+
+		border: 2px solid $buttonColor;
+	
+	}
+
+}
+
+
+.wp-view__button {
+
+	background-color: $buttonColor;
+	border: none;
+	color: white;
+
+	&:hover {
+
+		background-color: $buttonColorDarker;
+		color: inherit;
+		border: inherit;
+		cursor: pointer;
+
+	}
+
+	&:focus {
+
+		box-shadow: none;
+		
+	}	
+
+}
+
+
+.wp-view__random,
+.wp-view__more-button {
+
+	display: inline-block;
+	padding: 12px 12px;
+	background-color: $bg;
+	border: 1px solid white;
+	color: white;	
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 1.1;
+	cursor: pointer;
+	margin-bottom: 40px;
+	
+
+	&:hover {
+
+		background-color: white;
+		color: $bg;
+		border-color: transparent;
+		text-decoration: none;
+
+	}
+
+
+}
+
